@@ -1,0 +1,59 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "shopping list backend API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "_moduleAliases": {
+    "@": "./node_modules"
+  },
+  "plugins": [
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathPrefix": "@"
+      }
+    ]
+  ],
+  "author": "Maor",
+  "license": "MIT",
+  "dependencies": {
+      "axios": "^1.7.2",
+     "colors": "^1.4.0",
+    "connect": "^3.3.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "directory-import": "^3.3.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "express-session": "^1.17.3",
+    "helmet": "^6.0.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
+    "punycode": "^2.3.1",
+    "serve-static": "^1.9.1",
+    "slugify": "^1.6.5",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@locator/babel-jsx": "^0.2.4",
+    "babel-plugin-root-import": "^6.6.0",
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
+    "link-module-alias": "^1.2.0",
+    "nodemon": "^2.0.21"
+  }
+}
