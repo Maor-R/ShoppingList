@@ -13,5 +13,6 @@ npm install
 
 ## Run the app
 ```js
+cd ..
 npm run dev 
 ```
